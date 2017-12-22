@@ -1,0 +1,32 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+#ui-mainmenu {
+  display: none;
+}
+#ui-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+}
+#ui-overlay button {
+  color: #ddd;
+  padding: 5px 10px;
+  margin: auto 10px;
+  display: block;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 500ms;
+}
+#ui-overlay button:hover {
+  color: #fff;
+  transform: scale(1.25);
+}

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Battlecars</title>
+        <script src="sprite.js"></script>        
+        <script src="character.js"></script>
+        <script src="engine.js"></script>
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <div id="ui-overlay">
+            <button type="button">MENU</button>
+        </div>
+        <div id="ui-mainmenu"></div>
+        <canvas id="game" />
+        <script>
+            window.game = new Battlecars.Game(document.getElementById('game'));
+            window.game.init();
+        </script>
+    </body>
+</html>
